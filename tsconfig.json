@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "strict": true,
+    "lib": ["es2021"],
     "outDir": "./dist/",
     "noImplicitAny": true,
     "module": "es6",

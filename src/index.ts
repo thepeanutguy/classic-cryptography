@@ -1,1 +1,2 @@
-export * from './substitution/caesar-cipher';
+export * from './substitution';
+export * from './transposition';
