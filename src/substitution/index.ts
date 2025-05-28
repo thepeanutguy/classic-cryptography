@@ -1,3 +1,3 @@
 export * from './caesar-cipher';
-export * from './one-time-pad';
-export * from './vigenere';
+export * from '../other/one-time-pad';
+export * from '../polyalphabetic/vigenere';
