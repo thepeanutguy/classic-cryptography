@@ -1,3 +1,1 @@
-import shuffle from './shuffle';
-
-export default shuffle;
+export { default } from './shuffle';

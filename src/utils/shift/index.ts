@@ -1,3 +1,1 @@
-import shift from './shift';
-
-export default shift;
+export { default } from './shift';

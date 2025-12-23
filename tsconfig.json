@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "strict": true,
-    "lib": ["es2021"],
+    "lib": ["ES2024"],
     "outDir": "./dist/",
     "noImplicitAny": true,
     "module": "es6",
@@ -9,7 +9,7 @@
     "allowJs": false,
     "moduleResolution": "node",
     "paths": {
-      "#/*": ["./src/*"]
-    }
-  }
+      "#/*": ["./src/*"],
+    },
+  },
 }

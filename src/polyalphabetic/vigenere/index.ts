@@ -1,3 +1,1 @@
-import vigenere from './vigenere';
-
-export default vigenere;
+export { default } from './vigenere';

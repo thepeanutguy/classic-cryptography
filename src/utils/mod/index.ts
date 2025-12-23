@@ -1,3 +1,1 @@
-import mod from './mod';
-
-export default mod;
+export { default } from './mod';

@@ -1,3 +1,1 @@
-import caesarCipher from './caesar-cipher';
-
-export default caesarCipher;
+export { default } from './caesar-cipher';

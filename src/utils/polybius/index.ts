@@ -1,3 +1,1 @@
-import polybius from './polybius';
-
-export default polybius;
+export { default } from './polybius';

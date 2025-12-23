@@ -1,3 +1,1 @@
-import shift from '#/utils/shift';
-
-export default shift;
+export { default } from '#/utils/shift';

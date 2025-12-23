@@ -1,1 +1,5 @@
-export type OneTimePadFn = (purpose: 'encode' | 'decode', plainText: string, key: string) => string;
+export type OneTimePadFn = (
+  purpose: 'encode' | 'decode',
+  plainText: string,
+  key: string,
+) => string;

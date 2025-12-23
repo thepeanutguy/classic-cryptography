@@ -2,7 +2,9 @@ import oneTimePad from './one-time-pad';
 
 describe('oneTimePad', () => {
   test('throw error when plain text is longer than key', () => {
-    expect(() => oneTimePad('encode', 'three', 'one')).toThrow('the key must be at least as long as the plaintext');
+    expect(() => oneTimePad('encode', 'three', 'one')).toThrow(
+      'the key must be at least as long as the plaintext',
+    );
   });
 
   test.each`

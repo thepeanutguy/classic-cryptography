@@ -11,8 +11,11 @@
 
 ### Substitution
 
+- [Atbash](https://en.wikipedia.org/wiki/Atbash)
 - [Caesar cipher](https://en.wikipedia.org/wiki/Caesar_cipher).
+- [ROT13](https://en.wikipedia.org/wiki/ROT13)
 
 ### Other
 
+- [Pig Latin](https://en.wikipedia.org/wiki/Pig_Latin)
 - [One-time pad](https://en.wikipedia.org/wiki/One-time_pad).

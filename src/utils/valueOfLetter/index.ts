@@ -1,3 +1,1 @@
-import valueOfLetter from './valueOfLetter';
-
-export default valueOfLetter;
+export { default } from './valueOfLetter';
