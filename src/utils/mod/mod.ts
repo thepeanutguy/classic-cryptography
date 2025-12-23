@@ -1,11 +1,11 @@
-import type { ModFn } from './mod.interface';
+import type { Mod } from './mod.interface';
 
-const mod: ModFn = (n, p) => {
-  if ( n < 0 ) {
-    n = p - Math.abs(n) % p;
+const mod: Mod = (n, p) => {
+  if (n < 0) {
+    n = p - (Math.abs(n) % p);
   }
 
   return n % p;
-}
+};
 
 export default mod;

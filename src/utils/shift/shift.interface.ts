@@ -1,1 +1,1 @@
-export type ShiftFn = (plainText: string, key: number) => string;
+export type Shift = (plainText: string, key: number) => string;

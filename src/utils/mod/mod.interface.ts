@@ -1,1 +1,1 @@
-export type ModFn = (n: number, p: number) => number;
+export type Mod = (n: number, p: number) => number;

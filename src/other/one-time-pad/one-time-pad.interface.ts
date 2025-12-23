@@ -1,4 +1,4 @@
-export type OneTimePadFn = (
+export type OneTimePad = (
   purpose: 'encode' | 'decode',
   plainText: string,
   key: string,

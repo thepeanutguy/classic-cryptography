@@ -1,8 +1,8 @@
-import type { OneTimePadFn } from './one-time-pad.interface';
 import mod from '#/utils/mod';
 import valueOfLetter from '#/utils/valueOfLetter';
+import type { OneTimePad } from './one-time-pad.interface';
 
-const oneTimePad: OneTimePadFn = (purpose, plainText, key) => {
+const oneTimePad: OneTimePad = (purpose, plainText, key) => {
   if (plainText.length > key.length) {
     throw new Error('the key must be at least as long as the plaintext');
   }
@@ -14,15 +14,16 @@ const oneTimePad: OneTimePadFn = (purpose, plainText, key) => {
     const keyLetter = key[i].toUpperCase();
 
     if (plainTextLetter < 'A' || plainTextLetter > 'Z') {
-      return cipherText += plainTextLetter;
+      return (cipherText += plainTextLetter);
     }
 
     const plainTextLetterChar = valueOfLetter(plainTextLetter);
     const keyLetterChar = valueOfLetter(keyLetter);
 
-    const combination = purpose === 'encode'
-      ? plainTextLetterChar + keyLetterChar
-      : plainTextLetterChar - keyLetterChar
+    const combination =
+      purpose === 'encode'
+        ? plainTextLetterChar + keyLetterChar
+        : plainTextLetterChar - keyLetterChar;
 
     cipherText += String.fromCharCode(mod(combination, 26) + 65);
   }

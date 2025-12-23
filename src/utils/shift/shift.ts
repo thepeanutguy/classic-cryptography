@@ -1,11 +1,11 @@
-import mod from "#/utils/mod";
-import type { ShiftFn } from "./shift.interface";
+import mod from '#/utils/mod';
+import type { Shift } from './shift.interface';
 
 const CHAR_A = 65;
 const CHAR_Z = 90;
 
-const shift: ShiftFn = (plainText, key) => {
-  let cipherText = "";
+const shift: Shift = (plainText, key) => {
+  let cipherText = '';
 
   for (let i = 0; i < plainText.length; i += 1) {
     const letter = plainText[i];

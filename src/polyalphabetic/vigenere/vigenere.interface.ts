@@ -1,1 +1,1 @@
-export type VigenereFn = (plainText: string, key: string) => string;
+export type Vigenere = (plainText: string, key: string) => string;

@@ -1,1 +1,1 @@
-export type PolybiusFn = (characters: string[]) => string[][];
+export type Polybius = (characters: string[]) => string[][];

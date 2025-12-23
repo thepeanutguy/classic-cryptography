@@ -1,6 +1,6 @@
+import alphabet from '#/utils/consts/alphabet';
+import numbers from '#/utils/consts/numbers';
 import polybius from './polybius';
-import alphabet from "#/utils/consts/alphabet";
-import numbers from "#/utils/consts/numbers";
 
 describe('polybius', () => {
   test('array of length six, each containing an array containing six unique alpha-numeric characters', () => {

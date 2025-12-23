@@ -1,1 +1,1 @@
-export type ShuffleFn = (array: readonly string[]) => string[];
+export type Shuffle = (array: string[]) => string[];

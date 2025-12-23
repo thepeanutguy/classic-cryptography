@@ -1,3 +1,1 @@
-import oneTimePad from './one-time-pad';
-
-export default oneTimePad;
+export { default } from './one-time-pad';

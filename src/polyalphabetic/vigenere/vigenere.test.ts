@@ -5,11 +5,12 @@ describe('vigenere', () => {
     plainText                         | key               | expected
     ${'attackatdawn'}                 | ${'LEMONLEMONLE'} | ${'LXFOPVEFRNHR'}
     ${'cryptoisshortforcryptography'} | ${'ABCD'}         | ${'CSASTPKVSIQUTGQUCSASTPIUAQJB'}
-  `('encode "$plainText" via "$key" to "$expected"', (args) => {
-    const { plainText, key, expected } = args;
+  `(
+    'encode "$plainText" via "$key" to "$expected"',
+    ({ plainText, key, expected }) => {
+      const result = vigenere(plainText, key);
 
-    const result = vigenere(plainText, key);
-
-    expect(result).toStrictEqual(expected);
-  });
+      expect(result).toStrictEqual(expected);
+    },
+  );
 });
